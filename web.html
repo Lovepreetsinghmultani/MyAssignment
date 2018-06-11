@@ -1,0 +1,52 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+
+	$("#hide").click(function(){
+        $("p").hide();
+	$("img").hide();
+   	 });
+
+    	$("#show").click(function(){
+        $("p").show();
+	$("img").show();
+    	});
+	
+	$("#animate").click(function(){
+		$("div").animate({left:'100px'}, "slow");
+	});
+	
+	$("#rewind").click(function(){
+		$("div").animate({left:'50px'}, "slow");
+	});
+	$("#CSS").click(function(){
+		$("p").css("color","red").slideUp(2000).slideDown(2000);
+	});
+
+});
+</script> 
+</head>
+<body>
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id = "Animate"> Animate </button>
+<button id = "rewind"> Rewind </button>
+<button id = "CSS"> CSS </button>
+
+<p>My information</p>
+<p>I am lovepreet singh multani</p>
+<p>C0703279</p>
+<p>my hobbies are watching sports and movies,playing baseketball and listening music.</P>
+<img src="C:\Users\703279\Downloads\love\multani.jpg" alt="me" height="10%" width="10%"> <br> <br> <br> <br> <br> <br> <br> <br>
+<div style = "background: green; height : 100px; width: 100px;position:absolute;"> </div>
+
+
+
+</body>
+</html>
